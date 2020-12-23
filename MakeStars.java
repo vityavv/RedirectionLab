@@ -7,9 +7,9 @@ public class MakeStars {
 			while (words.hasNext()) {
 				String word = words.next();
 				for (int i = 0; i < word.length(); i++) System.out.print("*");
-				System.out.print(" ");
+				if (words.hasNext()) System.out.print(" ");
 			}
-			System.out.println();
+			if (lines.hasNextLine()) System.out.println();
 		}
 	}
 }
